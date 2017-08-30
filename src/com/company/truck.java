@@ -49,4 +49,9 @@ public class truck {
             distanceTravelled += normalSpeed;
         }
     }
+
+    @Override // from Object
+    public String toString(){
+        return "Name: " + name + " Type: " + getType() + " Distance traveled: " + distanceTravelled;
+    }
 }

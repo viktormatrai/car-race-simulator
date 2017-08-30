@@ -59,4 +59,10 @@ public class car {
             normalSpeed = rand.nextInt(110 - 80 + 1) + 80;
         }
     }
+
+    @Override // from Object
+    public String toString(){
+        return "Name: " + name + " Type: " + getType() + " Distance traveled: " + distanceTravelled;
+    }
+
 }

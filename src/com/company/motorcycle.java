@@ -42,4 +42,9 @@ public class motorcycle {
     public String getType(){
         return "motorcycle";
     }
+
+    @Override // from Object
+    public String toString(){
+        return "Name: " + name + " Type: " + getType() + " Distance traveled: " + distanceTravelled;
+    }
 }
