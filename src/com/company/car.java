@@ -8,7 +8,6 @@ import java.util.Random;
 public class car {
     static int i = 9, j= 0;
     String name;
-    String tryName;
     int normalSpeed;
     Random rand = new Random();
     String[] carNames = {"Blitz",
@@ -29,7 +28,7 @@ public class car {
         name = carNameList.get(i) + " " + carNameList.get(j);
         i--;
         j++;
-        normalSpeed = rand.nextInt(110-80+1)+80;
+        normalSpeed = rand.nextInt(110-80)+80;
     }
 
     public String getName() {
